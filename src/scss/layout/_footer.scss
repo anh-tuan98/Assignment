@@ -1,0 +1,121 @@
+.footer {
+  background: #202942;
+  &__email {
+    display: flex;
+    flex-direction: row;
+
+    .email-theme {
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: 1px;
+      color: #f8f9fc;
+      margin: 60px 45px;
+    }
+
+    .email-btn {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .btn-email {
+      background: #25304e;
+      border: 1px solid #25304e;
+      box-sizing: border-box;
+      border-radius: 10px;
+      text-align: center;
+      letter-spacing: 0.5px;
+      color: #f8f9fc;
+      padding: 10px 0px;
+      font-size: 16px;
+      line-height: 24px;
+      padding-right: 100px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    .btn-sub {
+      background: #2f55d4;
+      border: 1px solid #2f55d4;
+      box-sizing: border-box;
+      box-shadow: 0px 3px 5px rgba(47, 85, 212, 0.3);
+      border-radius: 10px;
+      padding: 9px 61px;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.5px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    .fa-envelope {
+      width: 22px;
+      height: 22px;
+      color: rgb(186, 186, 187);
+    }
+
+    .theme-para {
+      width: 348px;
+      height: 77px;
+      font-size: 16px;
+      line-height: 26px;
+      color: #adb5bd;
+    }
+
+    .fa-angle-right {
+      display: flex;
+      flex-direction: row;
+      color: #adb5bd;
+    }
+
+    .link-email {
+      font-size: 16px;
+      line-height: 24px;
+      color: #adb5bd;
+    }
+
+    .title-para {
+      width: 236px;
+      height: 52px;
+      font-size: 16px;
+      line-height: 26px;
+      color: #adb5bd;
+    }
+
+    .child-para {
+      font-size: 14px;
+      line-height: 21px;
+      color: #adb5bd;
+    }
+  }
+
+  &__pay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 45px;
+  }
+  .pay-landrick {
+    display: flex;
+    align-items: center;
+  }
+
+  .pay-year {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #adb5bd;
+  }
+
+  .fa-copyright {
+    color: #adb5bd;
+  }
+
+  .pay-card {
+  }
+
+  .card {
+    height: 25px;
+    margin-top: 15px;
+  }
+}
