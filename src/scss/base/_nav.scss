@@ -1,0 +1,113 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 74px;
+  position: relative;
+
+  &__namepage {
+    position: absolute;
+    width: 102px;
+    height: 68px;
+    left: 45px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 68px;
+    letter-spacing: 1px;
+    color: #3c4858;
+    cursor: pointer;
+    display: flex;
+    letter-spacing: 1px;
+
+    .dot {
+      width: 7px;
+      height: 68px;
+      color: #2f55d4;
+    }
+  }
+
+  &__items {
+    display: flex;
+    margin: 25px 0px;
+    cursor: pointer;
+
+    .nav-item .nav-link:hover {
+      color: #2f55d4;
+    }
+
+    .drop-item .box:hover {
+      color: #2f55d4;
+    }
+
+    .dropdown {
+      position: relative;
+
+      .drop-items {
+        background: #fff;
+        display: none;
+        position: absolute;
+        width: 155px;
+        height: 270px;
+        padding-left: 10px;
+        padding-top: 25px;
+        line-height: 30px;
+        font-size: 13px;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.48);
+        border-radius: 5%;
+      }
+
+      // .drop-items::before {
+      //   height: 10px;
+      //   width: 10px;
+      //   background-color: red;
+      // }
+    }
+
+    .dropdown:hover .drop-items {
+      display: block;
+
+      .drop-item .link:hover {
+        color: #2f55d4;
+      }
+    }
+
+    .nav-item {
+      margin: 0px 30px;
+      position: relative;
+
+      .nav-link {
+        font-size: 13px;
+        line-height: 24px;
+      }
+
+      .box {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        transform: rotate(45deg) translateY(-100%);
+        border-bottom: 2px #3c4858 solid;
+        border-right: 2px #3c4858 solid;
+        margin: 0px 10px;
+        left: 85%;
+        top: 50%;
+      }
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    right: 44px;
+    top: 17px;
+
+    .btn-buy {
+      padding: 9px 21px;
+      text-align: center;
+      letter-spacing: 0.5px;
+      color: #ffffff;
+      background: #2f55d4;
+      box-shadow: 0px 3px 5px rgba(47, 85, 212, 0.3);
+      cursor: pointer;
+    }
+  }
+}
