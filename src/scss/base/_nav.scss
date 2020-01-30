@@ -27,11 +27,11 @@
       color: $color-basic;
     }
 
-    .nav-item .nav-link:hover {
+    .nav-item:hover .nav-link {
       color: $color-basic;
     }
 
-    .dropdown .fa-angle-down:hover {
+    .fa-angle-down:hover .dropdown {
       color: $color-basic;
     }
 
@@ -50,6 +50,9 @@
         font-size: 13px;
         box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.48);
         border-radius: 5%;
+
+        &::before {
+        }
       }
 
       .fa-angle-down {
@@ -69,6 +72,14 @@
       margin: 0px 30px;
       position: relative;
 
+      &:hover {
+        color: $color-basic;
+
+        .fa-angle-down {
+          color: $color-basic;
+        }
+      }
+
       .nav-link {
         font-size: 13px;
         line-height: 24px;
@@ -77,10 +88,6 @@
 
       .fa-angle-down {
         margin: 0px 7px;
-      }
-
-      .nav-link .fa-angle-down:hover {
-        color: $color-basic;
       }
     }
   }
