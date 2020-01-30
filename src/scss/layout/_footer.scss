@@ -1,15 +1,32 @@
 .footer {
   background: #202942;
+
   &__email {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    padding: 60px 45px;
 
     .email-theme {
-      font-size: 24px;
+      @include font-config(24px);
       line-height: 36px;
       letter-spacing: 1px;
       color: #f8f9fc;
-      margin: 60px 45px;
+      padding: 0px;
+      margin: 0px;
+
+      .email-child {
+      }
+
+      .angle-right {
+        border: solid #adb5bd;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 2px;
+        transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        margin-right: 5px;
+      }
     }
 
     .email-btn {
@@ -17,7 +34,8 @@
       flex-direction: column;
     }
 
-    .btn-email {
+    .ip-email {
+      position: relative;
       background: #25304e;
       border: 1px solid #25304e;
       box-sizing: border-box;
@@ -26,7 +44,7 @@
       letter-spacing: 0.5px;
       color: #f8f9fc;
       padding: 10px 0px;
-      font-size: 16px;
+      @include font-config(16px);
       line-height: 24px;
       padding-right: 100px;
       margin-bottom: 20px;
@@ -40,7 +58,7 @@
       box-shadow: 0px 3px 5px rgba(47, 85, 212, 0.3);
       border-radius: 10px;
       padding: 9px 61px;
-      font-size: 16px;
+      @include font-config(16px);
       line-height: 24px;
       text-align: center;
       letter-spacing: 0.5px;
@@ -49,27 +67,20 @@
     }
 
     .fa-envelope {
-      width: 22px;
-      height: 22px;
-      color: rgb(186, 186, 187);
+      position: absolute;
+      padding: 11px;
     }
 
     .theme-para {
       width: 348px;
       height: 77px;
-      font-size: 16px;
+      @include font-config(16px);
       line-height: 26px;
       color: #adb5bd;
     }
 
-    .fa-angle-right {
-      display: flex;
-      flex-direction: row;
-      color: #adb5bd;
-    }
-
     .link-email {
-      font-size: 16px;
+      @include font-config(16px);
       line-height: 24px;
       color: #adb5bd;
     }
@@ -77,13 +88,13 @@
     .title-para {
       width: 236px;
       height: 52px;
-      font-size: 16px;
+      @include font-config(16px);
       line-height: 26px;
       color: #adb5bd;
     }
 
     .child-para {
-      font-size: 14px;
+      @include font-config(14px);
       line-height: 21px;
       color: #adb5bd;
     }
@@ -93,29 +104,33 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 30px 45px;
-  }
-  .pay-landrick {
-    display: flex;
-    align-items: center;
-  }
+    margin: 0px 0px;
+    border-top: 1px solid #ffffff;
 
-  .pay-year {
-    margin-top: 15px;
-    font-size: 16px;
-    line-height: 26px;
-    color: #adb5bd;
-  }
+    .pay-landrick {
+      display: flex;
+      align-items: center;
+      margin-left: 45px;
+    }
 
-  .fa-copyright {
-    color: #adb5bd;
-  }
+    .pay-year {
+      margin-top: 15px;
+      @include font-config(16px);
+      line-height: 26px;
+      color: #adb5bd;
+    }
 
-  .pay-card {
-  }
+    .fa-copyright {
+      color: #adb5bd;
+    }
 
-  .card {
-    height: 25px;
-    margin-top: 15px;
+    .pay-card {
+      margin-right: 45px;
+    }
+
+    .card {
+      height: 25px;
+      margin-top: 15px;
+    }
   }
 }

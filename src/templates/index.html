@@ -7,7 +7,7 @@
   <body>
     <nav class="nav">
       <h class="nav__namepage">
-        Landrick <span class="dot">.</span>
+        Landrick
       </h>
       <ul class="nav__items">
         <li class="nav-item">
@@ -15,7 +15,7 @@
         </li>
         <li class="nav-item dropdown">
           <a href="#" class="nav-link drop-link">LANDING</a>
-          <div class="box"></div>
+          <i class="fas fa-angle-down"></i>
           <ul class="drop-items">
             <li class="drop-item">
               <a href="#" class="link">SAAS</a>
@@ -48,7 +48,8 @@
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">PAGES</a>
-          <div class="box"></div>
+          <!-- <div class="box"></div> -->
+          <i class="fas fa-angle-down"></i>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">DOCS</a>
@@ -182,8 +183,11 @@
         <div class="answers__author">
           <img class="avatar" src="src/images/r1.png" alt="profile1">
           <div class="author-landrick">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            <img class="para-poly" src="src\images\Polygon 1.png" alt="polygon">
+            <div class="landrick-start">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <!-- <i class="fas fa-caret-left"></i> -->
+            <!-- <img class="para-poly" src="src\images\Polygon 1.png" alt="polygon"> -->
             <p class="author-para">
               " It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. " 
             </p>
@@ -191,8 +195,11 @@
           </div>
           <img class="avatar" src="src/images/r2.png" alt="profile2">
           <div class="author-landrick">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            <img class="para-poly" src="src\images\Polygon 1.png" alt="polygon">
+            <div class="landrick-start">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <!-- <i class="fas fa-caret-left"></i> -->
+            <!-- <img class="para-poly" src="src\images\Polygon 1.png" alt="polygon"> -->
             <p class="author-para">
               " One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others. "
             </p>
@@ -215,33 +222,59 @@
     </div>
     <div class="footer">
       <div class="footer__email">
-        <h class="email-theme">
+        <ul class="email-theme">
           Landrick
           <p class="theme-para">
             Start working with Landrick that can provide everything you need to
             generate awareness, drive traffic, connect.
           </p>
-        </h>
-        <h class="email-theme">
+        </ul>
+        <ul class="email-theme">
           Company
-          <i class="fas fa-angle-right"><a class="link-email">About us</a></i>
-          <i class="fas fa-angle-right"><a class="link-email">Services</a></i>
-          <i class="fas fa-angle-right"><a class="link-email">Team</a></i>
-          <i class="fas fa-angle-right"><a class="link-email">Pricing</a></i>
-          <i class="fas fa-angle-right"><a class="link-email">Features</a></i>
-          <i class="fas fa-angle-right"><a class="link-email">FAQ</a></i>
-          <i class="fas fa-angle-right"><a class="link-email">Blog</a></i>
-          <i class="fas fa-angle-right"><a class="link-email">Login</a></i>
-        </h>
-        <h class="email-theme">
+          <li class="email-child">      
+            <a class="link-email"><i class="angle-right"></i> About us</a>
+          </li>
+          <li class="email-child">
+            <a class="link-email"><i class="angle-right"></i> Services</a>
+          </li>
+          <li class="email-child">
+            <a class="link-email"><i class="angle-right"></i> Team</a>
+          </li>
+          <li class="email-child">
+            <a class="link-email"><i class="angle-right"></i> Pricing</a>
+          </li>
+          <li class="email-child">
+            <a class="link-email"><i class="angle-right"></i> Features</a>
+          </li>
+          <li class="email-child">
+            <a class="link-email"><i class="angle-right"></i> FAQ</a>
+          </li>
+          <li class="email-child">
+            <a class="link-email"><i class="angle-right"></i> Blog</a>
+          </li>
+          <li class="email-child">
+            <a class="link-email"><i class="angle-right"></i> Login</a>
+          </li>
+        </ul>
+        <ul class="email-theme">
           Usefull Links
-          <i class="fas fa-angle-right"><a class="link-email">Privacy</a></i>
-          <i class="fas fa-angle-right"><a class="link-email">Safe Payments</a></i>
-          <i class="fas fa-angle-right"><a class="link-email">Terms of Services</a></i>
-          <i class="fas fa-angle-right"><a class="link-email">Documentation</a></i>
-          <i class="fas fa-angle-right"><a class="link-email">Privacy Policy</a> </i>
-        </h>
-        <h class="email-theme">
+          <li class="email-child">
+            <a class="link-email"><i class="angle-right"></i> Privacy</a>
+          </li>
+          <li class="email-child">
+            <a class="link-email"><i class="angle-right"></i> Safe Payments</a>
+          </li>
+          <li class="email-child">
+            <a class="link-email"><i class="angle-right"></i> Terms of Services</a>
+          </li>
+          <li class="email-child">
+            <a class="link-email"><i class="angle-right"></i> Documentation</a>
+          </li>
+          <li class="email-child">
+            <a class="link-email"><i class="angle-right"></i> Privacy Policy</a>
+          </li>
+        </ul>
+        <ul class="email-theme">
           Newsletter
           <p class="title-para">
             Sign up and receive the latest tips via email.
@@ -250,10 +283,10 @@
             Write your email
           </p>
           <div class="email-btn">
-            <button class="btn-email" type="button"> <i class="fas fa-envelope"></i> Your email </button>
+            <input class="ip-email" type="text" value="Your email" ><i class="fas fa-envelope"></i></input>
             <button class="btn-sub" type="button">Subscribe</button>
           </div>  
-        </h>
+        </ul>
       </div>
       <div class="footer__pay">
         <div class="pay-landrick">
