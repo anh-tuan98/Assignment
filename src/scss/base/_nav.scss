@@ -47,16 +47,36 @@
         padding-left: 10px;
         padding-top: 25px;
         line-height: 30px;
-        font-size: 13px;
+        @include font-config(13px);
         box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.48);
         border-radius: 5%;
 
-        &::before {
+        &::after {
+          bottom: 100%;
+          content: "";
+          position: absolute;
+          height: 0;
+          width: 0;
+          border: solid transparent;
+          border-bottom-color: #ffffff;
+          border-width: 10px;
         }
-      }
 
-      .fa-angle-down {
-        margin: 0px 7px;
+        &::before {
+          content: "";
+          position: absolute;
+          transform: rotate(-135deg);
+          width: 10px;
+          height: 10px;
+          top: -5px;
+          left: 12.5px;
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.48);
+          z-index: -1;
+        }
+
+        .fa-angle-down {
+          margin: 0px 7px;
+        }
       }
     }
 
